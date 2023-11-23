@@ -1,0 +1,50 @@
+{% extends "finance/finance_story/dashboard.html" %}
+{% load static %}
+{% block title %}Upcoming Transaction{% endblock %}
+
+{% block content %}
+<div class="head-title">
+    <div class="left">
+        <h1>Upcoming Transaction</h1>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">Transactions</a>
+            </li>
+            <li><i class='bx bx-chevron-right' ></i></li>
+            <li>
+                <a class="active" href="#">Transactions</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+    <div class="table-data">
+        <div class="order">
+            <div class="head">
+                <h3>Upcoming Payments Table</h3>
+                <i class='bx bx-search' ></i>
+                <i class='bx bx-filter' ></i>
+            </div>
+            <div id="search-results">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Purpose</th>
+                        <th>Amount</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <div id="error-message" class="error-message" >
+						No matching transactions found.
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block css %}{% static "css/upcomingPayments.css" %}{% endblock %}
+{% block script %}{% static "js/upcomingPayments.js" %}{% endblock %}

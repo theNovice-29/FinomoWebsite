@@ -1,0 +1,143 @@
+{% extends "finance/baseHome.html" %}
+{% load static %}
+{% block title %}Dashboard{% endblock %}
+
+
+{% block navbar %}
+    <a href="{% url 'users:profile' username=request.user.username %}" class="profile">
+        <img src="{% static "img/profile.jpeg" %}">
+    </a>
+    {% if request.user.is_authenticated %}
+        <p>You're logged in as <strong style="text-transform: uppercase;">{{ request.user.username }}</strong></p>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    <div class="head-title">
+        <div class="left">
+            <h1>Dashboard</h1>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="{% url 'finance:dashboard' %}">Dashboard</a>
+                </li>
+                <li><i class='bx bx-chevron-right'></i></li>
+                <li>
+                    <a class="active" href="#">Home</a>
+                </li>
+            </ul>
+        </div>
+        {% block pdf %}{% endblock %}
+    </div>
+
+    <ul class="box-info">
+        <a href="{% url 'dashboard:totalBudget' %}">
+            <li>
+                <i class='bx bxs-calendar-check'></i>
+                <span class="text">
+						<h3>Total Budget</h3>
+						<p>$2000</p>
+					</span>
+            </li>
+        </a>
+        <li>
+            <i class='bx bxs-group'></i>
+            <span class="text">
+						<h3>Incomes</h3>
+						<p>$5000</p>
+					</span>
+        </li>
+        <li>
+            <i class='bx bxs-dollar-circle'></i>
+            <span class="text">
+						<h3>Spendings</h3>
+						<p>$1200</p>
+					</span>
+        </li>
+    </ul>
+
+
+    <div class="table-data">
+        <div class="order">
+            <div class="head">
+                <h3>All Settlements</h3>
+                <p class="sort"></p>
+                <i class='bx bx-filter'></i>
+            </div>
+            <table>
+                <thead>
+                <tr>
+                    <th>Roommate</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Comments</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for settlement in settlements %}
+                    <tr>
+                        <td>
+                            <img src="{% static settlement.image %}">
+                            <p>{{ settlement.name }}</p>
+                        </td>
+                        <td>{{ settlement.date }}</td>
+                        {% if settlement.status == 1 %}
+                            <td><span class="status completed">Completed</span></td>
+                        {% elif settlement.status == 2 %}
+                            <td><span class="status pending">Pending</span></td>
+                        {% elif settlement.status == 3 %}
+                            <td><span class="status process">Process</span></td>
+                        {% endif %}
+                        <td>
+                            <a href="{% url 'dashboard:settlement_detail' settlement.id %}#comments" class="table-link">
+                                comment
+                            </a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="todo">
+            <div class="head">
+                <h3>Recent Transactions</h3>
+            </div>
+            <ul class="todo-list">
+                {% for recentTransaction in recentTransactions %}
+                    {% if recentTransaction.status == 1 %}
+                        <li class="completed">
+                            {% elif recentTransaction.status == 0 %}
+                        <li class="not-completed">
+                    {% endif %}
+                <p>{{ recentTransaction.name }}</p>
+                <i>{{ recentTransaction.price }}</i>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="todo">
+            <div class="head">
+                <h3>Upcoming Payments</h3>
+
+            </div>
+            <form action="{% url 'dashboard:search-results' %}" method="GET">
+                <input type="text" name="payment" placeholder="Search with any names below">
+                <button type="submit">Search</button>
+            </form>
+
+            <ul class="todo-list">
+                {% for upcomingPayment in upcomingPayments %}
+                    {% if upcomingPayment.status == 1 %}
+                        <li class="completed">
+                            {% elif upcomingPayment.status == 0 %}
+                        <li class="not-completed">
+                    {% endif %}
+                <p>{{ upcomingPayment.name }}</p>
+                <i>{{ upcomingPayment.price }}</i>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+{% block css %}{% static "css/dashboard.css" %}{% endblock %}
+{% block script %}{% static "js/dashboard.js" %}{% endblock %}

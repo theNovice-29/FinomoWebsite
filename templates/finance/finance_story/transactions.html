@@ -1,0 +1,131 @@
+{% extends "finance/finance_story/dashboard.html" %}
+{% load static %}
+
+
+{% block navbar %}
+    <form id="search-form" method="GET" action="{% url 'transactions:search_transactions' %}">
+        <div class="form-input">
+            <input type="search" id="search-input" name="query" placeholder="Search by Purpose">
+            <button type="submit" class="search-btn" id="search-btn"><i class='bx bx-search'></i></button>
+        </div>
+    </form>
+    <a href="{% url 'users:profile' username=request.user.username %}" class="profile">
+        <img src="{% static "img/profile.jpeg" %}">
+    </a>
+    {% if request.user.is_authenticated %}
+        <p>You're logged in as <strong style="text-transform: uppercase;">{{ request.user.username }}</strong></p>
+    {% endif %}
+{% endblock %}
+<!-- NAVBAR -->
+{% block content %}
+    <!-- MAIN -->
+    <div class="head-title">
+        <div class="left">
+            <h1>Transactions</h1>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">Transactions</a>
+                </li>
+                <li><i class='bx bx-chevron-right'></i></li>
+                <li>
+                    <a class="active" href="#">Home</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="table-data">
+        <div class="order">
+            <div class="head">
+                <h3>All Transactions</h3>
+                <p>sorted by date</p>
+                <i class='bx bx-filter'></i>
+            </div>
+
+            <table>
+                <thead>
+                <tr>
+                    <th>Transaction ID</th>
+                    <th>Purpose</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for transaction in transactions %}
+                    <tr id="transaction-{{ transaction.transaction_number }}">
+                        <td>
+                            <a href="{% url 'finance:updateTransaction' transaction.transaction_number %}">{{ transaction.transaction_number }}</a>
+                        </td>
+                        <td>{{ transaction.purpose }}</td>
+                        <td>{{ transaction.categoryField.name }}</td>
+                        <td>{{ transaction.date }}</td>
+                        <td class="amount">{{ transaction.amount }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            <div id="error-message" class="error-message">
+                No matching transactions found.
+            </div>
+        </div>
+
+        <div class="todo">
+            <div class="head">
+                <h3>Add Expense</h3>
+            </div>
+            <div id="expense-form">
+                <form method="post" action="{% url 'dashboard:transactions' %}">
+                    {% csrf_token %}  <!-- Include the CSRF token -->
+                    <ul class="todo-list">
+                        <li>
+                            <label for="purpose">Purpose</label>
+                            <input type="text" id="purpose" name="purpose" placeholder="eg: Dinner at Taco Bamba">
+                        </li>
+                        <li>
+                            <label for="amount">Amount</label>
+                            <input type="number" id="amount" name="amount" placeholder="0.0" step="0.01" min="0">
+                        </li>
+                        <li>
+                            <label>Category &#8212</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="3" name="category" value="3">
+                            <label for="category1">Shopping</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="2" name="category" value="2">
+                            <label for="category2">Revenue</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="1" name="category" value="1">
+                            <label for="category3">Food & Drink</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="4" name="category" value="4">
+                            <label for="category4">Bills & Utilities</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="5" name="category" value="5">
+                            <label for="category5">Others</label>
+                        </li>
+
+                        <button type="submit" id="submit-button" class="submit-button">Submit</button>
+                    </ul>
+                </form>
+            </div>
+
+            <div id="confirmation-box" style="display: none;">
+
+            </div>
+            <div id="error-message-expense" style="display: none; color: red;">
+                Please fill in all fields.
+            </div>
+        </div>
+
+    </div>
+    <!-- MAIN -->
+{% endblock content %}
+{% block css %}{% static "css/transactions.css" %}{% endblock %}
+{% block script %}{% static "js/transactions.js" %}{% endblock %}

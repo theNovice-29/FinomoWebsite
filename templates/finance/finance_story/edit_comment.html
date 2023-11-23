@@ -1,0 +1,32 @@
+{% extends "finance/finance_story/dashboard.html" %}
+{% load static %}
+{% block title %}Comments{% endblock %}
+
+{% block content %}
+    <div class="head-title">
+        <div class="left">
+            <h1>Edit Comment for {{ comment.user.username }}</h1>
+            <ul class="breadcrumb">
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="table-data">
+        <div class="todo">
+            <div class="container">
+                <h3>Comments</h3>
+                {% if user.is_authenticated %}
+                    <form method="post" action="{% url 'dashboard:comment_detail' comment.id %}">
+                        {% csrf_token %}
+                        {{ form.text }}  <!-- Assuming 'form' is passed in context -->
+                        <button type="submit">Save Changes</button>
+                    </form>
+                {% else %}
+                    <p>You must be logged in to post comments.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block css %}{% static "css/settlement_detail.css" %}{% endblock %}

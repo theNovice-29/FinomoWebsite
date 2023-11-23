@@ -1,0 +1,11 @@
+{% for action in actions %}
+    <div style="font-size: 0.85em; display: inline;">
+        <span style="white-space: nowrap; display: inline-block; max-width: 80%;">
+            {{ action.user.username }}
+            {{ action.verb }} <a href="{{ action.target.get_absolute_url }}">{{ action.target }}</a>
+        </span>
+        <div style="font-size: 0.75em;">{{ action.created|timesince }} ago</div>
+    </div>
+{% empty %}
+    <div style="font-size: 0.85em;">No Activity yet</div>
+{% endfor %}

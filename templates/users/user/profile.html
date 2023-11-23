@@ -1,0 +1,99 @@
+{% extends "finance/finance_story/dashboard.html" %}
+{% load static %}
+{% block title %}Settings{% endblock %}
+
+{% block content %}
+    <div class="head-title">
+        <div class="left">
+            <h1>Settings</h1>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">Settings</a>
+                </li>
+                <li><i class='bx bx-chevron-right'></i></li>
+                <li>
+                    <a class="active" href="#">Home</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="table-data">
+        <div class="todo">
+            <div class="container">
+                <form method="POST" action="{% url 'users:update_profile' %}">
+                    {% csrf_token %}
+                    <h1>Update Profile: {{ user_profile.username }}</h1>
+                    <div class="profile">
+                        <img src="{% static "img/profile.jpeg" %}" alt="Current Profile Picture">
+
+                    </div>
+
+                    <div class="first-name">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" value="{{ user_profile.first_name }}">
+                    </div>
+
+                    <div class="last-name">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" value="{{ user_profile.last_name }}">
+                    </div>
+
+                    <div class="email">
+                        <label for="new-email">Email Address:</label>
+                        <input type="email" id="new-email" name="new-email" value="{{ user_profile.email }}">
+                    </div>
+
+
+                    <div class="phone">
+                        <label for="new-phone">Username:</label>
+                        <input type="tel" id="new-phone" name="new-phone" value="{{ user_profile.username }}" readonly>
+                    </div>
+
+                    <div class="roommate-status">
+                        <label>Roommate Status:</label>
+                        <label for="roommate">
+                            <input type="radio" id="roommate" name="roommate-status" value="True"
+                                    {% if user_profile.user.is_staff == true %} checked {% endif %}> Roommate
+                        </label>
+                        <label for="not-roommate">
+                            <input type="radio" id="not-roommate" name="roommate-status" value="False"
+                                    {% if not user_profile.user.is_staff == false %} checked {% endif %}> Not a Roommate
+                        </label>
+                    </div>
+                    <button type="submit" class="save-button">Save Changes</button>
+                </form>
+
+                <form method="POST" action="{% url 'users:delete_profile' %}" class="delete-profile-form">
+                    {% csrf_token %}
+                    <div class="delete-profile">
+                        <p>Are you sure you want to delete your profile? This action cannot be undone.</p>
+                        <button type="submit">Delete Profile</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block css %}{% static "css/logout.css" %}{% endblock %}
+{% block script %}
+    <script>
+        $(document).ready(function () {
+            $('.container').on('click', '.delete-profile button', function (e) {
+                e.preventDefault();
+                const confirmation = confirm('Are you sure you want to delete your profile? This action cannot be undone.');
+                if (confirmation) {
+                    $(this).closest('form').submit();
+                }
+            });
+
+            $('.container').on('click', '.save-button', function (e) {
+                e.preventDefault();
+                $(this).closest('form').submit();
+            });
+
+        });
+    </script>
+{% endblock %}
