@@ -1,0 +1,1466 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add settlement",
+    "content_type": 7,
+    "codename": "add_settlement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change settlement",
+    "content_type": 7,
+    "codename": "change_settlement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete settlement",
+    "content_type": 7,
+    "codename": "delete_settlement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view settlement",
+    "content_type": 7,
+    "codename": "view_settlement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add recent transaction",
+    "content_type": 8,
+    "codename": "add_recenttransaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change recent transaction",
+    "content_type": 8,
+    "codename": "change_recenttransaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete recent transaction",
+    "content_type": 8,
+    "codename": "delete_recenttransaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view recent transaction",
+    "content_type": 8,
+    "codename": "view_recenttransaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add transaction",
+    "content_type": 9,
+    "codename": "add_transaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change transaction",
+    "content_type": 9,
+    "codename": "change_transaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete transaction",
+    "content_type": 9,
+    "codename": "delete_transaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view transaction",
+    "content_type": 9,
+    "codename": "view_transaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add budgets",
+    "content_type": 10,
+    "codename": "add_budgets"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change budgets",
+    "content_type": 10,
+    "codename": "change_budgets"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete budgets",
+    "content_type": 10,
+    "codename": "delete_budgets"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view budgets",
+    "content_type": 10,
+    "codename": "view_budgets"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 11,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 11,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 11,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 11,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add details",
+    "content_type": 12,
+    "codename": "add_details"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change details",
+    "content_type": 12,
+    "codename": "change_details"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete details",
+    "content_type": 12,
+    "codename": "delete_details"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view details",
+    "content_type": 12,
+    "codename": "view_details"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 13,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 13,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 13,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 13,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add activity",
+    "content_type": 14,
+    "codename": "add_activity"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change activity",
+    "content_type": 14,
+    "codename": "change_activity"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete activity",
+    "content_type": 14,
+    "codename": "delete_activity"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view activity",
+    "content_type": 14,
+    "codename": "view_activity"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$UaWi7VEui65zvXenxRgs7h$uMpVH3wyKF+zvCJg27QPDR/OM6TCG21ILyY2oGYt5Pk=",
+    "last_login": "2023-11-17T04:07:23.847Z",
+    "is_superuser": true,
+    "username": "ankit",
+    "first_name": "Ankit",
+    "last_name": "Bhatt",
+    "email": "a@a.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-11-15T02:31:49.027Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 13,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$Kny6ybjGdbwWIk8Q78poJw$+um11MPpqNYf4SKvFpWJhcL3uwZxNqN6ZhR0SkHyLdY=",
+    "last_login": "2023-11-17T04:13:46.934Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "a@a",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-11-16T21:50:21.420Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 15,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$UfjgOCUKCMRNU1Q9et52uB$6ByREGD7K+CUPGq7gk+Nlf5mLUB2Ssvja46PgL3eTwk=",
+    "last_login": "2023-11-17T04:11:15.380Z",
+    "is_superuser": true,
+    "username": "administrator",
+    "first_name": "Test First Name",
+    "last_name": "Test Last Name",
+    "email": "admin@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-11-17T03:44:12.570Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 16,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$GZbnifxCp8Csz1kyZS6AB0$odfaBV9XnRiV+o5eALIzds90+4Qjic9I0tMGGiKRYdM=",
+    "last_login": "2023-11-17T03:46:37.104Z",
+    "is_superuser": false,
+    "username": "johnwick",
+    "first_name": "John",
+    "last_name": "Wick",
+    "email": "john@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-11-17T03:46:25.006Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 20,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$ijLpdbkyA1ARYKBn8wQ2IR$PJ1Mv+udHsP4jk0JDPBgxKb9R19kA2VfIlS9a6wVQKs=",
+    "last_login": "2023-11-17T04:07:55.701Z",
+    "is_superuser": false,
+    "username": "qq",
+    "first_name": "qq",
+    "last_name": "qq",
+    "email": "qqq@q",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-11-17T03:57:37.805Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "finance",
+    "model": "settlement"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "finance",
+    "model": "recenttransaction"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "finance",
+    "model": "transaction"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "finance",
+    "model": "budgets"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "finance",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "users",
+    "model": "details"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "finance",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "actions",
+    "model": "activity"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "281hgojcd5cswijpsbuuvy7858ccqrik",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlle23I2lPScIfLu2iQQbCmfCnF3EikFKefNm_modU5Tie-krirKeyjqoqY6_scurkvf7V43yMbBnSFFfqWyN_KM5VE117JMA-ld0Uc763uVNN4O93TQx7nf1pydbclKYwWRnTHZo8VgQzYQ0OdsghATNIkY2FlEAovgOQXw0qL6_gAt1EKn:1r3pIA:52it4k66AeOIdIh2PhB2MvT3ZtPYqy4gMkI6GEeHtP0",
+    "expire_date": "2023-12-01T03:13:14.301Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2gh0gzlq3ru7t9px70qgx9sitf8s8gbi",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSG8KS7d-w2EmaFSNZCUdmX8dyXpQnc395ycF4tp30rce17jQuzMpGSn3xMSPnIdhO6p3hrHVrd1AT4UftDOr43y83K4f4GSehldbbXyMOngrEWkoGcDGYwC4QMph06I7H0A9M56m8AZOQNgJqGm72TvD-7PN9c:1r3j2S:XRFy8Pp-Y_L3xpN4FWlexeICIwidtrBeBWFPaWWf7iE",
+    "expire_date": "2023-11-30T20:32:36.260Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "54v57aaig98ffvrd89iejckzsn7kbtxc",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAURO_C2pAC8qUu3XsG8vlAW62QQLsy3l1IutDlzLx5b2Zx32a711Ds4tmViQs7_ZYO6RlSX_wD05Q55bSVxfGO8GOt_J59WG8H-yeYsc7tLYmMdi4SIUSAKHHAEc-gSQoYFIlRGyF8VFpBiC5oOQ7KaAMugnFaNGnXJXyFZsPqsTUlrz2VMO0rFvb5ApF8Q4I:1r3psf:ueBGe71sCBI8i89Vpr9cHgt3OKpjB3XPTvQ8pmvjea4",
+    "expire_date": "2023-12-01T03:50:57.471Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9uanbtu7ozlovzu9da97scbyu7sr48w5",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGln-xexS0nMGa7O2cQDZUpxUiLuTSCmgnHlv5i0CrUsJa09zmKK4CCdOv91I_Ex1B_FB9d4kt7rM0yh3RR60y1uL6XU93L-DQr1s6wzWG4gGvVeKwJ4juiFrdshA5D2hMVvWjGgGyEYlZR0hsLMRNZP4fAG7PDb2:1r34IG:7YNet6S5g3uUwtNF9VkwiKw5uvcrw5Rz1DZ3hB6VNAQ",
+    "expire_date": "2023-11-29T01:02:12.405Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ccmepg69aybvn95si36w1x3z6ocv6ftl",
+  "fields": {
+    "session_data": ".eJxVjDsOwyAQRO9CHSHY4A8p0-cM1gK7_sQBCdtVlLsHJBdJOTNv3lsMeOzTcGyUhzmIm9BGXH5Lh_5JsS5hwTgm6VPc8-xkReS5bvKRAq33k_0TTLhN5e11Qx5IMUBHTIy-Aby2voWgbFBt0KiN5V6z6q12wAYU6847bMgahiKtuogvKrYlxVLktNaQaTxWzOLzBWIAQ6w:1r3mvp:P-Ru9ZYX2u_KpUAGyJQlE4kRii7yb6bX_OT7LfI7pJg",
+    "expire_date": "2023-12-01T00:42:01.037Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qwrce6tc629qbih37dt97pi9sv18wj8u",
+  "fields": {
+    "session_data": ".eJxVjMsOgyAURP-FdUN4Ba9ddt9vMHAvqK1Cgroy_fdC4qJdzsyZc7LBHfs0HFsow0zszqRmt9_SO3yH1BZ6uTRmjjntZfa8IfxaN_7MFJbHxf4JJrdN9Y1Rq94r6hQBoBYiGlBglY1CWjAxCkseveyCR4laAXipQBoMVhrqoUqbLrk1VJujdU61KnlpsYTxWFxhny-lZ0OQ:1r3kFn:7bMJvUW16Qk17ZhYiBaFQkoBTuQoO9Ndytd2CNOlF-0",
+    "expire_date": "2023-11-30T21:50:27.999Z"
+  }
+},
+{
+  "model": "finance.settlement",
+  "pk": 1,
+  "fields": {
+    "name": "Aditya K",
+    "date": "2023-09-14",
+    "status": 1,
+    "image": "img/adityak.jpeg"
+  }
+},
+{
+  "model": "finance.settlement",
+  "pk": 2,
+  "fields": {
+    "name": "Shreyas S",
+    "date": "2023-09-12",
+    "status": 2,
+    "image": "img/shreyas.jpeg"
+  }
+},
+{
+  "model": "finance.settlement",
+  "pk": 3,
+  "fields": {
+    "name": "Jay S",
+    "date": "2023-09-10",
+    "status": 3,
+    "image": "img/jay.jpeg"
+  }
+},
+{
+  "model": "finance.settlement",
+  "pk": 4,
+  "fields": {
+    "name": "Rahul P\n",
+    "date": "2023-09-18",
+    "status": 2,
+    "image": "img/rahul.jpeg"
+  }
+},
+{
+  "model": "finance.settlement",
+  "pk": 5,
+  "fields": {
+    "name": "Aditya J",
+    "date": "2023-09-18",
+    "status": 1,
+    "image": "img/adityaj.jpeg"
+  }
+},
+{
+  "model": "finance.recenttransaction",
+  "pk": 1,
+  "fields": {
+    "name": "Grocery Shopping on September 1",
+    "status": 0,
+    "price": "$ 30.45",
+    "flag": 0
+  }
+},
+{
+  "model": "finance.recenttransaction",
+  "pk": 2,
+  "fields": {
+    "name": "Dinner at Indian Restaurant",
+    "status": 1,
+    "price": "$ 20.15",
+    "flag": 0
+  }
+},
+{
+  "model": "finance.recenttransaction",
+  "pk": 3,
+  "fields": {
+    "name": "Costco",
+    "status": 0,
+    "price": "$ 7.80",
+    "flag": 0
+  }
+},
+{
+  "model": "finance.recenttransaction",
+  "pk": 4,
+  "fields": {
+    "name": "Macy's",
+    "status": 1,
+    "price": "$ 4.5",
+    "flag": 0
+  }
+},
+{
+  "model": "finance.recenttransaction",
+  "pk": 5,
+  "fields": {
+    "name": "Soft Drink McD",
+    "status": 1,
+    "price": "$ 4.5",
+    "flag": 0
+  }
+},
+{
+  "model": "finance.recenttransaction",
+  "pk": 6,
+  "fields": {
+    "name": "Utilities",
+    "status": 0,
+    "price": "$ 30.45",
+    "flag": 1
+  }
+},
+{
+  "model": "finance.recenttransaction",
+  "pk": 7,
+  "fields": {
+    "name": "Home Rent",
+    "status": 0,
+    "price": "$ 30.45",
+    "flag": 1
+  }
+},
+{
+  "model": "finance.recenttransaction",
+  "pk": 8,
+  "fields": {
+    "name": "Car Insurance",
+    "status": 0,
+    "price": "$ 300.45",
+    "flag": 1
+  }
+},
+{
+  "model": "finance.recenttransaction",
+  "pk": 9,
+  "fields": {
+    "name": "Mobile Plan Bill",
+    "status": 1,
+    "price": "$ 20.15",
+    "flag": 1
+  }
+},
+{
+  "model": "finance.recenttransaction",
+  "pk": 10,
+  "fields": {
+    "name": "Electricity Bill",
+    "status": 0,
+    "price": "$ 7.80",
+    "flag": 1
+  }
+},
+{
+  "model": "finance.recenttransaction",
+  "pk": 11,
+  "fields": {
+    "name": "Wi-Fi Bill",
+    "status": 1,
+    "price": "$ 4.5",
+    "flag": 1
+  }
+},
+{
+  "model": "finance.recenttransaction",
+  "pk": 12,
+  "fields": {
+    "name": "Water Bill",
+    "status": 1,
+    "price": "$ 4.5",
+    "flag": 1
+  }
+},
+{
+  "model": "finance.comment",
+  "pk": 2,
+  "fields": {
+    "settlement": 1,
+    "user": 13,
+    "text": "sdflkslds;'\r\n",
+    "created_at": "2023-11-16T23:18:23.497Z",
+    "updated_at": "2023-11-17T00:24:16.950Z"
+  }
+},
+{
+  "model": "finance.comment",
+  "pk": 8,
+  "fields": {
+    "settlement": 2,
+    "user": 13,
+    "text": "sdfdfl;'slfsd\r\n",
+    "created_at": "2023-11-17T00:11:52.037Z",
+    "updated_at": "2023-11-17T00:24:16.950Z"
+  }
+},
+{
+  "model": "finance.comment",
+  "pk": 9,
+  "fields": {
+    "settlement": 1,
+    "user": 11,
+    "text": "",
+    "created_at": "2023-11-17T00:30:43.884Z",
+    "updated_at": "2023-11-17T00:30:43.884Z"
+  }
+},
+{
+  "model": "finance.comment",
+  "pk": 10,
+  "fields": {
+    "settlement": 5,
+    "user": 11,
+    "text": "sdlfss;'fl",
+    "created_at": "2023-11-17T00:32:01.957Z",
+    "updated_at": "2023-11-17T00:32:01.957Z"
+  }
+},
+{
+  "model": "finance.category",
+  "pk": 1,
+  "fields": {
+    "name": "Food & Drink"
+  }
+},
+{
+  "model": "finance.category",
+  "pk": 2,
+  "fields": {
+    "name": "Revenue"
+  }
+},
+{
+  "model": "finance.category",
+  "pk": 3,
+  "fields": {
+    "name": "Shopping"
+  }
+},
+{
+  "model": "finance.category",
+  "pk": 4,
+  "fields": {
+    "name": "Bills & Utilities"
+  }
+},
+{
+  "model": "finance.category",
+  "pk": 5,
+  "fields": {
+    "name": "Others"
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 1,
+  "fields": {
+    "transaction_number": "010",
+    "purpose": "dinner",
+    "categoryField": 4,
+    "date": "2023-08-02",
+    "amount": 2.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 2,
+  "fields": {
+    "transaction_number": "009",
+    "purpose": "Jacket",
+    "categoryField": 1,
+    "date": "2023-08-20",
+    "amount": 34.03
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 3,
+  "fields": {
+    "transaction_number": "008",
+    "purpose": "Restaurant in Virginia",
+    "categoryField": 1,
+    "date": "2023-08-16",
+    "amount": 15.49
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 4,
+  "fields": {
+    "transaction_number": "007",
+    "purpose": "Electricity Bill",
+    "categoryField": 4,
+    "date": "2023-08-14",
+    "amount": 1.49
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 5,
+  "fields": {
+    "transaction_number": "006",
+    "purpose": "Candles",
+    "categoryField": 5,
+    "date": "2023-08-11",
+    "amount": 520.18
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 6,
+  "fields": {
+    "transaction_number": "005",
+    "purpose": "Bus Ticket",
+    "categoryField": 2,
+    "date": "2023-08-10",
+    "amount": 2.12
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 7,
+  "fields": {
+    "transaction_number": "004",
+    "purpose": "Semester Fees",
+    "categoryField": 5,
+    "date": "2023-08-08",
+    "amount": 17999.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 8,
+  "fields": {
+    "transaction_number": "003",
+    "purpose": "Groceries",
+    "categoryField": 1,
+    "date": "2023-08-02",
+    "amount": 30.84
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 9,
+  "fields": {
+    "transaction_number": "002",
+    "purpose": "Chocolate",
+    "categoryField": 1,
+    "date": "2023-08-01",
+    "amount": 3.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 10,
+  "fields": {
+    "transaction_number": "001",
+    "purpose": "",
+    "categoryField": 2,
+    "date": "2023-08-02",
+    "amount": 1002.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 27,
+  "fields": {
+    "transaction_number": "011",
+    "purpose": "sas",
+    "categoryField": 3,
+    "date": "2023-11-04",
+    "amount": 12.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 28,
+  "fields": {
+    "transaction_number": "012",
+    "purpose": "12",
+    "categoryField": 3,
+    "date": "2023-11-04",
+    "amount": 12.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 29,
+  "fields": {
+    "transaction_number": "013",
+    "purpose": "asa",
+    "categoryField": 2,
+    "date": "2023-11-04",
+    "amount": 12.1
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 30,
+  "fields": {
+    "transaction_number": "014",
+    "purpose": "wee",
+    "categoryField": 3,
+    "date": "2023-11-04",
+    "amount": 23.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 31,
+  "fields": {
+    "transaction_number": "015",
+    "purpose": "asa",
+    "categoryField": 2,
+    "date": "2023-11-04",
+    "amount": 12.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 32,
+  "fields": {
+    "transaction_number": "016",
+    "purpose": "111",
+    "categoryField": 3,
+    "date": "2023-11-04",
+    "amount": 11.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 33,
+  "fields": {
+    "transaction_number": "017",
+    "purpose": "saasa",
+    "categoryField": 3,
+    "date": "2023-11-05",
+    "amount": 12.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 35,
+  "fields": {
+    "transaction_number": "019",
+    "purpose": "dinner",
+    "categoryField": 3,
+    "date": "2023-11-05",
+    "amount": 12.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 37,
+  "fields": {
+    "transaction_number": "021",
+    "purpose": "dinner",
+    "categoryField": 3,
+    "date": "2023-11-05",
+    "amount": 12.02
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 38,
+  "fields": {
+    "transaction_number": "022",
+    "purpose": "q2wq",
+    "categoryField": 3,
+    "date": "2023-11-05",
+    "amount": 111.01
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 39,
+  "fields": {
+    "transaction_number": "023",
+    "purpose": "weewr",
+    "categoryField": 3,
+    "date": "2023-11-05",
+    "amount": 12.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 40,
+  "fields": {
+    "transaction_number": "024",
+    "purpose": "asdasd",
+    "categoryField": 3,
+    "date": "2023-11-14",
+    "amount": 12.01
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 41,
+  "fields": {
+    "transaction_number": "025",
+    "purpose": "dinner",
+    "categoryField": 3,
+    "date": "2023-11-17",
+    "amount": 11.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 42,
+  "fields": {
+    "transaction_number": "026",
+    "purpose": "new ",
+    "categoryField": 3,
+    "date": "2023-11-17",
+    "amount": 11.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 43,
+  "fields": {
+    "transaction_number": "027",
+    "purpose": "dad",
+    "categoryField": 3,
+    "date": "2023-11-17",
+    "amount": 11.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 44,
+  "fields": {
+    "transaction_number": "028",
+    "purpose": "dad",
+    "categoryField": 3,
+    "date": "2023-11-17",
+    "amount": 11.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 45,
+  "fields": {
+    "transaction_number": "029",
+    "purpose": "dad",
+    "categoryField": 3,
+    "date": "2023-11-17",
+    "amount": 11.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 46,
+  "fields": {
+    "transaction_number": "030",
+    "purpose": "dad",
+    "categoryField": 3,
+    "date": "2023-11-17",
+    "amount": 11.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 47,
+  "fields": {
+    "transaction_number": "031",
+    "purpose": "asad",
+    "categoryField": 2,
+    "date": "2023-11-17",
+    "amount": 11.0
+  }
+},
+{
+  "model": "finance.transaction",
+  "pk": 48,
+  "fields": {
+    "transaction_number": "032",
+    "purpose": "asdsqa",
+    "categoryField": 3,
+    "date": "2023-11-17",
+    "amount": 11.0
+  }
+},
+{
+  "model": "finance.budgets",
+  "pk": 1,
+  "fields": {
+    "date": "2023-04-09",
+    "amount": "$11, 500"
+  }
+},
+{
+  "model": "finance.budgets",
+  "pk": 2,
+  "fields": {
+    "date": "2023-05-04",
+    "amount": "$9, 500"
+  }
+},
+{
+  "model": "finance.budgets",
+  "pk": 3,
+  "fields": {
+    "date": "2023-06-02",
+    "amount": "$11, 500"
+  }
+},
+{
+  "model": "finance.budgets",
+  "pk": 4,
+  "fields": {
+    "date": "2023-07-01",
+    "amount": "$12, 000"
+  }
+},
+{
+  "model": "finance.budgets",
+  "pk": 5,
+  "fields": {
+    "date": "2023-08-01",
+    "amount": "$10, 000"
+  }
+},
+{
+  "model": "finance.budgets",
+  "pk": 6,
+  "fields": {
+    "date": "2023-10-31",
+    "amount": "$5.00"
+  }
+},
+{
+  "model": "finance.budgets",
+  "pk": 7,
+  "fields": {
+    "date": "2023-11-01",
+    "amount": "$60.00"
+  }
+},
+{
+  "model": "finance.budgets",
+  "pk": 8,
+  "fields": {
+    "date": "2023-11-05",
+    "amount": "$43.00"
+  }
+},
+{
+  "model": "finance.budgets",
+  "pk": 9,
+  "fields": {
+    "date": "2023-11-14",
+    "amount": "$15.00"
+  }
+},
+{
+  "model": "finance.budgets",
+  "pk": 10,
+  "fields": {
+    "date": "2023-11-17",
+    "amount": "$21.00"
+  }
+},
+{
+  "model": "users.details",
+  "pk": 1,
+  "fields": {
+    "user": 11,
+    "role": "admin"
+  }
+},
+{
+  "model": "users.details",
+  "pk": 3,
+  "fields": {
+    "user": 13,
+    "role": "admin"
+  }
+},
+{
+  "model": "users.details",
+  "pk": 5,
+  "fields": {
+    "user": 15,
+    "role": "regular"
+  }
+},
+{
+  "model": "users.details",
+  "pk": 6,
+  "fields": {
+    "user": 16,
+    "role": "regular"
+  }
+},
+{
+  "model": "users.details",
+  "pk": 10,
+  "fields": {
+    "user": 20,
+    "role": "regular"
+  }
+},
+{
+  "model": "actions.activity",
+  "pk": 6,
+  "fields": {
+    "user": 13,
+    "verb": "created transaction",
+    "target_ct": 9,
+    "target_id": 48,
+    "created": "2023-11-17T04:13:54.893Z"
+  }
+}
+]
